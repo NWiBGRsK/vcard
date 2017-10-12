@@ -1,0 +1,13 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Firstname Middle Lastname
+UID:03311654-f5d1-4b2e-b74c-a320cf91d6a5
+TEL;TYPE=HOME,VOICE:+1 555 234
+ADR;TYPE=WORK:;;Street;City;province;123456;MyCountry
+EMAIL;TYPE=HOME:firstname.lastname@foobar.com
+REV:20170824T134615Z
+ORG:fooBar Company
+TITLE:Senior Expert
+URL:https://www.foobar.com
+NOTE:first line\nsecond line\nthird
+END:VCARD
