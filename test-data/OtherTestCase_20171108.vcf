@@ -1,0 +1,6 @@
+BEGIN:VCARD
+VERSION:2.1
+N;LANGUAGE=de:Lastname;Firstname;Middle;Dr.
+FN:Dr. Firstname Middle Lastname
+TEL;CELL:+1 (555) 234
+END:VCARD

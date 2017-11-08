@@ -192,12 +192,12 @@ class VCard:
         sData = re.sub("(ADR);(.*?)(;PREF)(:|;)",
                        "\g<1>;TYPE=\g<2>\g<3>\g<4>", sData)
         #
-        sData = re.sub(";CELL(:|;)", ";TYPE=cell,voice\g<1>", sData)
         sData = re.sub(";CELL;VOICE(:|;)", ";TYPE=cell,voice\g<1>", sData)
+        sData = re.sub(";CELL(:|;)", ";TYPE=cell,voice\g<1>", sData)
         sData = re.sub(";HOME;VOICE(:|;)", ";TYPE=home,voice\g<1>", sData)
+        sData = re.sub(";HOME(:|;)", ";TYPE=home\g<1>", sData)
         sData = re.sub(";WORK;VOICE(:|;)", ";TYPE=work,voice\g<1>", sData)
         sData = re.sub(";PAGER;VOICE(:|;)", ";TYPE=pager,voice\g<1>", sData)
-        sData = re.sub(";HOME(:|;)", ";TYPE=home\g<1>", sData)
         #
         sData = re.sub(";VALUE=URI;TYPE=GIF(:|;)",
                        ";MEDIATYPE=image/gif\g<1>", sData)  # PHOTO
